@@ -1,6 +1,4 @@
-﻿version: "3.9"
-
-services:
+﻿services:
   api:
     build:
       context: ..
@@ -20,8 +18,3 @@ services:
       POSTGRES_PASSWORD: 76127612
     ports:
       - "5432:5432"
-    volumes:
-      - pgdata:/var/lib/postgresql/data
-
-volumes:
-  pgdata:
